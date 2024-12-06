@@ -12,6 +12,12 @@ members = [
 name = "lib-a"
 version = "0.1.0"
 source = { editable = "packages/lib-a" }
+dependencies = [
+    { name = "lib-b" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "lib-b", editable = "packages/lib-b" }]
 
 [[package]]
 name = "lib-b"
