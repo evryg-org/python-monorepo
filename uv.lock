@@ -1,0 +1,18 @@
+version = 1
+requires-python = ">=3.8"
+
+[manifest]
+members = [
+    "lib-a",
+    "python-uv-playground",
+]
+
+[[package]]
+name = "lib-a"
+version = "0.1.0"
+source = { virtual = "packages/lib-a" }
+
+[[package]]
+name = "python-uv-playground"
+version = "0.1.0"
+source = { virtual = "." }
