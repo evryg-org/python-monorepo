@@ -4,6 +4,7 @@ requires-python = ">=3.8"
 [manifest]
 members = [
     "lib-a",
+    "lib-b",
     "python-uv-playground",
 ]
 
@@ -11,6 +12,11 @@ members = [
 name = "lib-a"
 version = "0.1.0"
 source = { virtual = "packages/lib-a" }
+
+[[package]]
+name = "lib-b"
+version = "0.1.0"
+source = { virtual = "packages/lib-b" }
 
 [[package]]
 name = "python-uv-playground"
