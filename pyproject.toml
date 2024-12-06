@@ -15,3 +15,8 @@ lib-b = { workspace = true }
 
 [tool.uv.workspace]
 members = ["packages/*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+]
