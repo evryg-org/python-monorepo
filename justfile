@@ -26,3 +26,6 @@ format: install-tools
 
 format-fix: install-tools
     ruff format packages/**/*
+
+type-check: install
+    pyright

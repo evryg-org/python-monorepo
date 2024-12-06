@@ -20,4 +20,5 @@ members = ["packages/*"]
 dev = [
     "pytest-watcher>=0.4.3",
     "pytest>=8.3.4",
+    "pyright>=1.1.390",
 ]
