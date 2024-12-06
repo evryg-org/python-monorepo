@@ -1,4 +1,4 @@
-from lib_b.main import add
+from lib_b.maths import add
 
 
 def test_that_it_sums_numbers():

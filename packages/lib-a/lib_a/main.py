@@ -1,4 +1,4 @@
-from lib_b.main import add
+from lib_b.maths import add
 
 
 def compute():
