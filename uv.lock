@@ -11,12 +11,12 @@ members = [
 [[package]]
 name = "lib-a"
 version = "0.1.0"
-source = { virtual = "packages/lib-a" }
+source = { editable = "packages/lib-a" }
 
 [[package]]
 name = "lib-b"
 version = "0.1.0"
-source = { virtual = "packages/lib-b" }
+source = { editable = "packages/lib-b" }
 
 [[package]]
 name = "python-uv-playground"
