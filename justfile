@@ -6,3 +6,6 @@ install:
 
 test *forward: install
     pytest {{forward}}
+
+test-watch *forward: install
+    pytest-watcher . --now {{forward}}
