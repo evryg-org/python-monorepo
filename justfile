@@ -7,11 +7,13 @@ install:
 install-tools:
     uv tool install ruff
 
-test *forward: install
-    pytest {{forward}}
+[positional-arguments]
+test *args: install
+    pytest $@
 
-test-watch *forward: install
-    pytest-watcher . --now {{forward}}
+[positional-arguments]
+test-watch *args: install
+    pytest-watcher . --now $@
 
 lint: install-tools
     ruff check --diff packages/**/*
